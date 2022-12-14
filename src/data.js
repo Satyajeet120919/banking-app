@@ -1,14 +1,5 @@
 const DATA = [
-    {
-        email: "admin@admin.com",
-        password: "abc123",
-        fullname: "Admin Account",
-        type: "Savings Peso",
-        number: "47290539480",
-        balance: 1000,
-        isAdmin: true, 
-        transactions: []
-    },
+    
     {
         email: "jeff@gmail.com",
         password: "abc123",
@@ -36,21 +27,7 @@ const DATA = [
                 title: "Food take out during the pandemic",
                 amount: 4000
             }
-        ], 
-        transactions: [
-            {
-                title: "Fund transfer", 
-                amount: 2000,
-                type: "debit", 
-                date: "October 1, 2021"
-            }, 
-            {
-                title: "Withdraw", 
-                amount: 10000, 
-                type: "debit",
-                date: "October 1, 2021"
-            }
-        ]
+
     },
     {
         email: "user24@gmail.com",
