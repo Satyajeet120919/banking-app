@@ -22,8 +22,7 @@ export const Authenticate = () => {
 
       clients.forEach(user => {
         if(user.email === email && user.password === password) {
-          if(user.isAdmin) {
-            setIsAdmin(true);
+          if(user.isAdmin){
             setClient(user);
             isFound = true;
           }
@@ -36,7 +35,7 @@ export const Authenticate = () => {
         }
       });
   
-      if(!isFound) setNotif({message: 'Wrong username and password.', style: 'danger'});
+    
       return isFound;
     }
   
@@ -49,7 +48,7 @@ export const Authenticate = () => {
     const logout = () => {
         setIsLoggedIn(false);
         setIsAdmin(false);
-        localStorage.removeItem('client')
+        )
         setNotif({message: 'You have logged out.', style: 'success'});
     }
   
